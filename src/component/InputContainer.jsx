@@ -2,8 +2,15 @@ import * as React from 'react';
 import { convert } from '../logic/convert';
 import "./InputContainer.css";
 
-
 var shortid = require('shortid');
+
+function importAll(r) {
+  let images = {};
+  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+  return images;
+}
+
+const images = importAll(require.context('../media', false, /\.(png|jpe?g|svg)$/));
 
 export default class InputContainer extends React.Component {
   constructor(props) {
@@ -49,8 +56,9 @@ export default class InputContainer extends React.Component {
           <button onClick={this.convertHandler}>Convert</button>
           <button onClick={this.IncrementItem}>+</button>
           <button onClick={this.DecrementItem}>-</button>
+
           {this.state.result.map((number, i) =>
-            <li className={i} key={i}>{number}</li>
+            <li className={i} key={i}>{number} <img src={images[number + '.png']} /></li>
           )}
         </form>
       </div>

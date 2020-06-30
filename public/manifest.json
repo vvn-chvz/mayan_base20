@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Mayan Numeral Converter",
+  "name": "Arabic Numeral to Base 20 Mayan Numeral Converter",
   "icons": [
     {
       "src": "favicon.ico",

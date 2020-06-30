@@ -52,13 +52,13 @@ export default class InputContainer extends React.Component {
     return (
       <div>
         <form onSubmit={this.convertHandler}>
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="number" step="1" value={this.state.value} onChange={this.handleChange} />
           <button onClick={this.convertHandler}>Convert</button>
           <button onClick={this.IncrementItem}>+</button>
           <button onClick={this.DecrementItem}>-</button>
 
           {this.state.result.map((number, i) =>
-            <li className={i} key={i}>{number} <img src={images[number + '.png']} /></li>
+            <li className={i} key={i}>{number} <img alt="" src={images[number + '.png']} /></li>
           )}
         </form>
       </div>

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { convert } from '../logic/convert';
 import "./InputContainer.css";
+import { Flex } from './Flex'
 
 var shortid = require('shortid');
 
@@ -50,18 +51,30 @@ export default class InputContainer extends React.Component {
 
   render() {
     return (
-      <div>
+      <Flex
+        container
+        justifyContent="center"
+      >
         <form onSubmit={this.convertHandler}>
-          <input type="number" step="1" value={this.state.value} onChange={this.handleChange} />
-          <button onClick={this.convertHandler}>Convert</button>
-          <button onClick={this.IncrementItem}>+</button>
-          <button onClick={this.DecrementItem}>-</button>
-
-          {this.state.result.map((number, i) =>
-            <li className={i} key={i}>{number} <img alt="" src={images[number + '.png']} /></li>
-          )}
+          <div>
+            <input type="number" step="1" value={this.state.value} onChange={this.handleChange} />
+            <button onClick={this.convertHandler}>Convert</button>
+          </div>
+          <div>
+            <button onClick={this.IncrementItem}>+</button>
+            <button onClick={this.DecrementItem}>-</button>
+          </div>
+          <Flex
+            container
+            justifyContent="center"
+            flexDirection="column"
+          >
+            {this.state.result.map((number, i) =>
+              <li className={i} key={i}><span>{number}</span> <img alt="" src={images[number + '.png']} /></li>
+            )}
+          </Flex>
         </form>
-      </div>
+      </Flex>
     );
   }
 }

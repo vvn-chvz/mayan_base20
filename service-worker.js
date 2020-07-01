@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mayan_base20/precache-manifest.754a69aaec1738f64cdb0fac88b8a7bb.js"
+  "/mayan_base20/precache-manifest.d7b74785a8d34354a1d94b9d58a2b2c4.js"
 );
 
 self.addEventListener('message', (event) => {

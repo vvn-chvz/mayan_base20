@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { convert } from '../logic/convert';
 import "./InputContainer.css";
-import { Flex } from './Flex'
+import Box from '@material-ui/core/Box';
+import Container from '@material-ui/core/Container';
 
 var shortid = require('shortid');
 
@@ -51,30 +52,24 @@ export default class InputContainer extends React.Component {
 
   render() {
     return (
-      <Flex
-        container
-        justifyContent="center"
+      <Container
       >
         <form onSubmit={this.convertHandler}>
-          <div>
+          <Box color="text.primary">
             <input type="number" step="1" value={this.state.value} onChange={this.handleChange} />
             <button onClick={this.convertHandler}>Convert</button>
-          </div>
-          <div>
+          </Box>
+          <Box color="text.primary">
             <button onClick={this.IncrementItem}>+</button>
             <button onClick={this.DecrementItem}>-</button>
-          </div>
-          <Flex
-            container
-            justifyContent="center"
-            flexDirection="column"
-          >
+          </Box>
+          <Box color="text.primary">
             {this.state.result.map((number, i) =>
               <li className={i} key={i}><span>{number}</span> <img alt="" src={images[number + '.png']} /></li>
             )}
-          </Flex>
+          </Box>
         </form>
-      </Flex>
+      </Container>
     );
   }
 }

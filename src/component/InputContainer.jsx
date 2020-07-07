@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { convert } from '../logic/convert';
 import "./InputContainer.css";
+import PlusMinus from './PlusMinus';
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
 
@@ -52,17 +53,15 @@ export default class InputContainer extends React.Component {
 
   render() {
     return (
-      <Container
-      >
+      <Container>
         <form onSubmit={this.convertHandler}>
           <Box color="text.primary">
             <input type="number" step="1" value={this.state.value} onChange={this.handleChange} />
             <button onClick={this.convertHandler}>Convert</button>
           </Box>
-          <Box color="text.primary">
-            <button onClick={this.IncrementItem}>+</button>
-            <button onClick={this.DecrementItem}>-</button>
-          </Box>
+          
+            <PlusMinus add={this.IncrementItem} subtract={this.DecrementItem} />
+          
           <Box color="text.primary">
             {this.state.result.map((number, i) =>
               <li className={i} key={i}><span>{number}</span> <img alt="" src={images[number + '.png']} /></li>

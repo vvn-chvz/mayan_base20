@@ -2,7 +2,9 @@ import * as React from 'react';
 import { convert } from '../logic/convert';
 import "./InputContainer.css";
 import PlusMinus from './PlusMinus';
+import TextBox from './TextBox';
 import Box from '@material-ui/core/Box';
+import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 
 var shortid = require('shortid');
@@ -53,12 +55,13 @@ export default class InputContainer extends React.Component {
 
   render() {
     return (
-      <Container>
+      <Container maxWidth="lg">
         <form onSubmit={this.convertHandler}>
           <Box color="text.primary">
             <input type="number" step="1" value={this.state.value} onChange={this.handleChange} />
+            <TextBox storage={this.state.value} action={this.handleChange} />
             <PlusMinus add={this.IncrementItem} subtract={this.DecrementItem} />
-            <button onClick={this.convertHandler}>Convert</button>
+            <Button variant="contained" onClick={this.convertHandler}>Convert</Button>
           </Box>
           <Box color="text.primary">
             {this.state.result.map((number, i) =>

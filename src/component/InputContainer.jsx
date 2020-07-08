@@ -57,11 +57,9 @@ export default class InputContainer extends React.Component {
         <form onSubmit={this.convertHandler}>
           <Box color="text.primary">
             <input type="number" step="1" value={this.state.value} onChange={this.handleChange} />
+            <PlusMinus add={this.IncrementItem} subtract={this.DecrementItem} />
             <button onClick={this.convertHandler}>Convert</button>
           </Box>
-          
-            <PlusMinus add={this.IncrementItem} subtract={this.DecrementItem} />
-          
           <Box color="text.primary">
             {this.state.result.map((number, i) =>
               <li className={i} key={i}><span>{number}</span> <img alt="" src={images[number + '.png']} /></li>

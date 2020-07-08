@@ -4,6 +4,7 @@ import "./InputContainer.css";
 import PlusMinus from './PlusMinus';
 import TextBox from './TextBox';
 import Box from '@material-ui/core/Box';
+import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 
@@ -58,10 +59,17 @@ export default class InputContainer extends React.Component {
       <Container maxWidth="lg">
         <form onSubmit={this.convertHandler}>
           <Box color="text.primary">
-            <input type="number" step="1" value={this.state.value} onChange={this.handleChange} />
-            <TextBox storage={this.state.value} action={this.handleChange} />
-            <PlusMinus add={this.IncrementItem} subtract={this.DecrementItem} />
-            <Button variant="contained" onClick={this.convertHandler}>Convert</Button>
+            <Grid container justify="center" alignItems="center" spacing={1}>
+              <Grid item xs={2}>
+                <TextBox storage={this.state.value} action={this.handleChange} />
+              </Grid>
+              <Grid item xs={2}>
+                <Button type="submit" variant="contained" onClick={this.convertHandler}>Convert</Button>
+              </Grid>
+              <Grid item xs={12}>
+                <PlusMinus add={this.IncrementItem} subtract={this.DecrementItem} />
+              </Grid>
+            </Grid>
           </Box>
           <Box color="text.primary">
             {this.state.result.map((number, i) =>

@@ -7,6 +7,7 @@ import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
+import Paper from '@material-ui/core/Paper';
 
 var shortid = require('shortid');
 
@@ -58,6 +59,7 @@ export default class InputContainer extends React.Component {
     return (
       <Container maxWidth="lg">
         <form onSubmit={this.convertHandler}>
+        <Paper elevation={3}>
           <Box color="text.primary">
             <Grid container justify="center" alignItems="center" spacing={1}>
               <Grid item xs={2}>
@@ -76,6 +78,7 @@ export default class InputContainer extends React.Component {
               <li className={i} key={i}><span>{number}</span> <img alt="" src={images[number + '.png']} /></li>
             )}
           </Box>
+          </Paper>
         </form>
       </Container>
     );

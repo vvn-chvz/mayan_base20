@@ -60,7 +60,7 @@ export default class InputContainer extends React.Component {
       <Container maxWidth="lg">
         <form onSubmit={this.convertHandler}>
         <Paper elevation={3}>
-          <Box color="text.primary">
+          <Box py={3} color="text.primary">
             <Grid container justify="center" alignItems="center" spacing={1}>
               <Grid item xs={2}>
                 <TextBox storage={this.state.value} action={this.handleChange} />
@@ -73,7 +73,7 @@ export default class InputContainer extends React.Component {
               </Grid>
             </Grid>
           </Box>
-          <Box color="text.primary">
+          <Box height={550} color="text.primary">
             {this.state.result.map((number, i) =>
               <li className={i} key={i}><span>{number}</span> <img alt="" src={images[number + '.png']} /></li>
             )}

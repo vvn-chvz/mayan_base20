@@ -75,7 +75,7 @@ export default class InputContainer extends React.Component {
           </Box>
           <Box height={550} color="text.primary">
             {this.state.result.map((number, i) =>
-              <li className={i} key={i}><span>{number}</span> <img alt="" src={images[number + '.png']} /></li>
+              <li className={i} key={i}><img alt="" src={images[number + '.png']} /></li>
             )}
           </Box>
           </Paper>

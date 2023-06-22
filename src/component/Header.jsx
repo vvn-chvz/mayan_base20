@@ -11,6 +11,9 @@ const useStyles = makeStyles((theme) => ({
     title: {
         flexGrow: 1,
     },
+    headerBar: {
+        borderRadius: 4,
+    },
 }));
 
 export default function Header() {
@@ -18,9 +21,9 @@ export default function Header() {
 
     return (
         <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar position="static" className={classes.headerBar}>
                 <Toolbar>
-                    <Typography variant="h6" className={classes.title}>
+                    <Typography variant="h5" className={classes.title}>
                         Mayan Numeral Converter
                     </Typography>
                 </Toolbar>

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Header from './Header';
 import InputContainer from './InputContainer';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
@@ -8,9 +7,8 @@ import Box from '@material-ui/core/Box';
 export default class Wrap extends React.Component {
     render() {
         return (
-            <Container maxWidth="lg">
-                <Box py={3} color="text.primary">
-                    <Header></Header>
+            <Container maxWidth="md">
+                <Box py={8} color="text.primary">
                     <InputContainer></InputContainer>
                 </Box>
             </Container>

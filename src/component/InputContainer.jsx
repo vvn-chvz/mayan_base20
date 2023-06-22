@@ -3,6 +3,7 @@ import { convert } from '../logic/convert';
 import "./InputContainer.css";
 import PlusMinus from './PlusMinus';
 import TextBox from './TextBox';
+import Header from './Header';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
@@ -58,20 +59,21 @@ export default class InputContainer extends React.Component {
     return (
         <form onSubmit={this.convertHandler}>
         <Paper elevation={3}>
+        <Header></Header>
           <Box py={3} color="text.primary">
             <Grid container justify="center" alignItems="center" spacing={1}>
-              <Grid item xs={12} md={4} lg={3}>
+              <Grid item xs={12} md={3}>
                 <TextBox storage={this.state.value} action={this.handleChange} />
               </Grid>
-              <Grid item xs={12} md={1} lg={1}>
-                <Button type="submit" variant="contained" onClick={this.convertHandler}>Convert</Button>
+              <Grid item xs={12} md={1}>
+                <Button type="submit" size="large" variant="contained" onClick={this.convertHandler}>Convert</Button>
               </Grid>
               <Grid item xs={12}>
                 <PlusMinus add={this.IncrementItem} subtract={this.DecrementItem} />
               </Grid>
             </Grid>
           </Box>
-          <Box height={550} color="text.primary">
+          <Box minHeight={200} color="text.primary">
             {this.state.result.map((number, i) =>
               <li className={i} key={i}><img alt="" src={images[number + '.png']} /></li>
             )}

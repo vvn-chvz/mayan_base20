@@ -6,11 +6,13 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        flexGrow: 1,
-        marginBottom: 5,
+        flexGrow: 1
     },
     title: {
         flexGrow: 1,
+    },
+    headerBar: {
+        borderRadius: 4,
     },
 }));
 
@@ -19,9 +21,9 @@ export default function Header() {
 
     return (
         <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar position="static" className={classes.headerBar}>
                 <Toolbar>
-                    <Typography variant="h6" className={classes.title}>
+                    <Typography variant="h5" className={classes.title}>
                         Mayan Numeral Converter
                     </Typography>
                 </Toolbar>

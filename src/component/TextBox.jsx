@@ -6,7 +6,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
-      width: '25ch',
     },
   },
 }));
@@ -22,7 +21,9 @@ const TextBox = (props) => {
         type="number"
         value={props.storage}
         onChange={props.action}
-        variant="filled"
+        onFocus={props.clear}
+        variant="outlined"
+        size="small"
       />
     </div>
   );

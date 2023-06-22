@@ -20,7 +20,7 @@ const PlusMinus = (props) => {
 
     return (
         <div className={classes.root}>
-        <ButtonGroup orientation="vertical" aria-label="vertical outlined button group">
+        <ButtonGroup orientation="horizontal" aria-label="horizontal outlined button group">
             <IconButton type="submit" aria-label="add" onClick={props.add}>
                 <AddCircleIcon />
             </IconButton>

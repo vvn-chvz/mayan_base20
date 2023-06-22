@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import Header from './component/Header';
-import InputContainer from './component/InputContainer';
+import Wrap from './component/Wrap';
 
 
 class App extends React.Component {
@@ -9,8 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <InputContainer />
+        <Wrap></Wrap>
       </div>
     );
   }

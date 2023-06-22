@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/mayan_base20/static/css/main.cefc018a.chunk.css",
-    "main.js": "/mayan_base20/static/js/main.d42dbfcd.chunk.js",
-    "main.js.map": "/mayan_base20/static/js/main.d42dbfcd.chunk.js.map",
-    "runtime-main.js": "/mayan_base20/static/js/runtime-main.60f39da3.js",
-    "runtime-main.js.map": "/mayan_base20/static/js/runtime-main.60f39da3.js.map",
-    "static/js/2.c6a059a4.chunk.js": "/mayan_base20/static/js/2.c6a059a4.chunk.js",
-    "static/js/2.c6a059a4.chunk.js.map": "/mayan_base20/static/js/2.c6a059a4.chunk.js.map",
-    "index.html": "/mayan_base20/index.html",
-    "precache-manifest.e15d15cdee76b2c0c74c26a845ac57bc.js": "/mayan_base20/precache-manifest.e15d15cdee76b2c0c74c26a845ac57bc.js",
-    "service-worker.js": "/mayan_base20/service-worker.js",
-    "static/css/main.cefc018a.chunk.css.map": "/mayan_base20/static/css/main.cefc018a.chunk.css.map",
-    "static/js/2.c6a059a4.chunk.js.LICENSE.txt": "/mayan_base20/static/js/2.c6a059a4.chunk.js.LICENSE.txt"
+    "main.css": "/vvn-chvz.github.io/mayan_base20/static/css/main.d839ce12.chunk.css",
+    "main.js": "/vvn-chvz.github.io/mayan_base20/static/js/main.73914fe5.chunk.js",
+    "main.js.map": "/vvn-chvz.github.io/mayan_base20/static/js/main.73914fe5.chunk.js.map",
+    "runtime-main.js": "/vvn-chvz.github.io/mayan_base20/static/js/runtime-main.c3dea0d5.js",
+    "runtime-main.js.map": "/vvn-chvz.github.io/mayan_base20/static/js/runtime-main.c3dea0d5.js.map",
+    "static/js/2.74b34cb1.chunk.js": "/vvn-chvz.github.io/mayan_base20/static/js/2.74b34cb1.chunk.js",
+    "static/js/2.74b34cb1.chunk.js.map": "/vvn-chvz.github.io/mayan_base20/static/js/2.74b34cb1.chunk.js.map",
+    "index.html": "/vvn-chvz.github.io/mayan_base20/index.html",
+    "precache-manifest.8eee64ca1815f8747ed24767fa5a2e50.js": "/vvn-chvz.github.io/mayan_base20/precache-manifest.8eee64ca1815f8747ed24767fa5a2e50.js",
+    "service-worker.js": "/vvn-chvz.github.io/mayan_base20/service-worker.js",
+    "static/css/main.d839ce12.chunk.css.map": "/vvn-chvz.github.io/mayan_base20/static/css/main.d839ce12.chunk.css.map",
+    "static/js/2.74b34cb1.chunk.js.LICENSE.txt": "/vvn-chvz.github.io/mayan_base20/static/js/2.74b34cb1.chunk.js.LICENSE.txt",
+    "static/media/NotoSansMayanNumerals-Regular.ttf": "/vvn-chvz.github.io/mayan_base20/static/media/NotoSansMayanNumerals-Regular.a27a0aa7.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.60f39da3.js",
-    "static/js/2.c6a059a4.chunk.js",
-    "static/css/main.cefc018a.chunk.css",
-    "static/js/main.d42dbfcd.chunk.js"
+    "static/js/runtime-main.c3dea0d5.js",
+    "static/js/2.74b34cb1.chunk.js",
+    "static/css/main.d839ce12.chunk.css",
+    "static/js/main.73914fe5.chunk.js"
   ]
 }

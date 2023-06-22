@@ -62,10 +62,10 @@ export default class InputContainer extends React.Component {
         <Paper elevation={3}>
           <Box py={3} color="text.primary">
             <Grid container justify="center" alignItems="center" spacing={1}>
-              <Grid item xs={2}>
+              <Grid item xs={12} md={4} lg={3}>
                 <TextBox storage={this.state.value} action={this.handleChange} />
               </Grid>
-              <Grid item xs={2}>
+              <Grid item xs={12} md={1} lg={1}>
                 <Button type="submit" variant="contained" onClick={this.convertHandler}>Convert</Button>
               </Grid>
               <Grid item xs={12}>

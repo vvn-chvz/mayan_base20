@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/vvn-chvz.github.io/mayan_base20/static/css/main.d839ce12.chunk.css",
-    "main.js": "/vvn-chvz.github.io/mayan_base20/static/js/main.73914fe5.chunk.js",
-    "main.js.map": "/vvn-chvz.github.io/mayan_base20/static/js/main.73914fe5.chunk.js.map",
-    "runtime-main.js": "/vvn-chvz.github.io/mayan_base20/static/js/runtime-main.c3dea0d5.js",
-    "runtime-main.js.map": "/vvn-chvz.github.io/mayan_base20/static/js/runtime-main.c3dea0d5.js.map",
-    "static/js/2.74b34cb1.chunk.js": "/vvn-chvz.github.io/mayan_base20/static/js/2.74b34cb1.chunk.js",
-    "static/js/2.74b34cb1.chunk.js.map": "/vvn-chvz.github.io/mayan_base20/static/js/2.74b34cb1.chunk.js.map",
-    "index.html": "/vvn-chvz.github.io/mayan_base20/index.html",
-    "precache-manifest.8eee64ca1815f8747ed24767fa5a2e50.js": "/vvn-chvz.github.io/mayan_base20/precache-manifest.8eee64ca1815f8747ed24767fa5a2e50.js",
-    "service-worker.js": "/vvn-chvz.github.io/mayan_base20/service-worker.js",
-    "static/css/main.d839ce12.chunk.css.map": "/vvn-chvz.github.io/mayan_base20/static/css/main.d839ce12.chunk.css.map",
-    "static/js/2.74b34cb1.chunk.js.LICENSE.txt": "/vvn-chvz.github.io/mayan_base20/static/js/2.74b34cb1.chunk.js.LICENSE.txt",
-    "static/media/NotoSansMayanNumerals-Regular.ttf": "/vvn-chvz.github.io/mayan_base20/static/media/NotoSansMayanNumerals-Regular.a27a0aa7.ttf"
+    "main.css": "/mayan_base20/static/css/main.804dc17d.chunk.css",
+    "main.js": "/mayan_base20/static/js/main.73914fe5.chunk.js",
+    "main.js.map": "/mayan_base20/static/js/main.73914fe5.chunk.js.map",
+    "runtime-main.js": "/mayan_base20/static/js/runtime-main.4ee90ee4.js",
+    "runtime-main.js.map": "/mayan_base20/static/js/runtime-main.4ee90ee4.js.map",
+    "static/js/2.74b34cb1.chunk.js": "/mayan_base20/static/js/2.74b34cb1.chunk.js",
+    "static/js/2.74b34cb1.chunk.js.map": "/mayan_base20/static/js/2.74b34cb1.chunk.js.map",
+    "index.html": "/mayan_base20/index.html",
+    "precache-manifest.fee27721d72287546b9a41e2994a799c.js": "/mayan_base20/precache-manifest.fee27721d72287546b9a41e2994a799c.js",
+    "service-worker.js": "/mayan_base20/service-worker.js",
+    "static/css/main.804dc17d.chunk.css.map": "/mayan_base20/static/css/main.804dc17d.chunk.css.map",
+    "static/js/2.74b34cb1.chunk.js.LICENSE.txt": "/mayan_base20/static/js/2.74b34cb1.chunk.js.LICENSE.txt",
+    "static/media/NotoSansMayanNumerals-Regular.ttf": "/mayan_base20/static/media/NotoSansMayanNumerals-Regular.a27a0aa7.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.c3dea0d5.js",
+    "static/js/runtime-main.4ee90ee4.js",
     "static/js/2.74b34cb1.chunk.js",
-    "static/css/main.d839ce12.chunk.css",
+    "static/css/main.804dc17d.chunk.css",
     "static/js/main.73914fe5.chunk.js"
   ]
 }

@@ -6,7 +6,6 @@ import TextBox from './TextBox';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
-import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
 
 var shortid = require('shortid');
@@ -57,7 +56,6 @@ export default class InputContainer extends React.Component {
 
   render() {
     return (
-      <Container maxWidth="lg">
         <form onSubmit={this.convertHandler}>
         <Paper elevation={3}>
           <Box py={3} color="text.primary">
@@ -80,7 +78,6 @@ export default class InputContainer extends React.Component {
           </Box>
           </Paper>
         </form>
-      </Container>
     );
   }
 }

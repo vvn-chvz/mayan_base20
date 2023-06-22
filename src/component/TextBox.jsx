@@ -24,6 +24,7 @@ const TextBox = (props) => {
         onFocus={props.clear}
         variant="outlined"
         size="small"
+        placeholder="Enter a number to convert!"
       />
     </div>
   );

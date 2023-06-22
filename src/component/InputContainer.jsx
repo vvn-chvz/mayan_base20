@@ -11,13 +11,30 @@ import Paper from '@material-ui/core/Paper';
 
 var shortid = require('shortid');
 
-function importAll(r) {
-  let images = {};
-  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-  return images;
-}
 
-const images = importAll(require.context('../media', false, /\.(png|jpe?g|svg)$/));
+// todo Clean this up!
+const glyphs = new Map();
+
+glyphs.set(0, '𝋠');
+glyphs.set(1, '𝋡');
+glyphs.set(2, '𝋢');
+glyphs.set(3, '𝋣');
+glyphs.set(4, '𝋤');
+glyphs.set(5, '𝋥');
+glyphs.set(6, '𝋦');
+glyphs.set(7, '𝋧');
+glyphs.set(8, '𝋨');
+glyphs.set(9, '𝋩');
+glyphs.set(10, '𝋪');
+glyphs.set(11, '𝋫');
+glyphs.set(12, '𝋬');
+glyphs.set(13, '𝋭');
+glyphs.set(14, '𝋮');
+glyphs.set(15, '𝋯');
+glyphs.set(16, '𝋰');
+glyphs.set(17, '𝋱');
+glyphs.set(18, '𝋲');
+glyphs.set(19, '𝋳');
 
 export default class InputContainer extends React.Component {
   constructor(props) {
@@ -61,7 +78,7 @@ export default class InputContainer extends React.Component {
         <Paper elevation={3}>
         <Header></Header>
           <Box py={3} color="text.primary">
-            <Grid container justify="center" alignItems="center" spacing={1}>
+            <Grid container justifyContent="center" alignItems="center" spacing={1}>
               <Grid item xs={12} md={3}>
                 <TextBox storage={this.state.value} action={this.handleChange} />
               </Grid>
@@ -73,9 +90,9 @@ export default class InputContainer extends React.Component {
               </Grid>
             </Grid>
           </Box>
-          <Box minHeight={200} color="text.primary">
+          <Box minHeight={200} pb={2} color="text.primary">
             {this.state.result.map((number, i) =>
-              <li className={i} key={i}><img alt="" src={images[number + '.png']} /></li>
+              <li className={i} key={i}>{glyphs.get(number)}</li>
             )}
           </Box>
           </Paper>

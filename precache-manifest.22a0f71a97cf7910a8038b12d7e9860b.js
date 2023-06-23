@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "22559f962a2a90997d0e5f12b064e0be",
+    "revision": "33bdd079638615791eb4ca9da7c83bf3",
     "url": "/mayan_base20/index.html"
   },
   {
-    "revision": "ebf13fa9bd4e3856dcca",
-    "url": "/mayan_base20/static/css/main.804dc17d.chunk.css"
+    "revision": "ae29bf31580987d46f97",
+    "url": "/mayan_base20/static/css/main.e95ed071.chunk.css"
   },
   {
     "revision": "cfc995dac64c05f521ee",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mayan_base20/static/js/2.74b34cb1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ebf13fa9bd4e3856dcca",
+    "revision": "ae29bf31580987d46f97",
     "url": "/mayan_base20/static/js/main.73914fe5.chunk.js"
   },
   {

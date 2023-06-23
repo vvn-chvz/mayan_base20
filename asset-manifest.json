@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mayan_base20/static/css/main.804dc17d.chunk.css",
+    "main.css": "/mayan_base20/static/css/main.e95ed071.chunk.css",
     "main.js": "/mayan_base20/static/js/main.73914fe5.chunk.js",
     "main.js.map": "/mayan_base20/static/js/main.73914fe5.chunk.js.map",
     "runtime-main.js": "/mayan_base20/static/js/runtime-main.4ee90ee4.js",
@@ -8,16 +8,16 @@
     "static/js/2.74b34cb1.chunk.js": "/mayan_base20/static/js/2.74b34cb1.chunk.js",
     "static/js/2.74b34cb1.chunk.js.map": "/mayan_base20/static/js/2.74b34cb1.chunk.js.map",
     "index.html": "/mayan_base20/index.html",
-    "precache-manifest.fee27721d72287546b9a41e2994a799c.js": "/mayan_base20/precache-manifest.fee27721d72287546b9a41e2994a799c.js",
+    "precache-manifest.22a0f71a97cf7910a8038b12d7e9860b.js": "/mayan_base20/precache-manifest.22a0f71a97cf7910a8038b12d7e9860b.js",
     "service-worker.js": "/mayan_base20/service-worker.js",
-    "static/css/main.804dc17d.chunk.css.map": "/mayan_base20/static/css/main.804dc17d.chunk.css.map",
+    "static/css/main.e95ed071.chunk.css.map": "/mayan_base20/static/css/main.e95ed071.chunk.css.map",
     "static/js/2.74b34cb1.chunk.js.LICENSE.txt": "/mayan_base20/static/js/2.74b34cb1.chunk.js.LICENSE.txt",
     "static/media/NotoSansMayanNumerals-Regular.ttf": "/mayan_base20/static/media/NotoSansMayanNumerals-Regular.a27a0aa7.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.4ee90ee4.js",
     "static/js/2.74b34cb1.chunk.js",
-    "static/css/main.804dc17d.chunk.css",
+    "static/css/main.e95ed071.chunk.css",
     "static/js/main.73914fe5.chunk.js"
   ]
 }
